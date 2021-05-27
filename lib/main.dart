@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:catalogo_filmes/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
       ),
       home:  AnimatedSplashScreen(
-        splash: Image.network(
-          "https://pequenocineasta.com.br/wp-content/uploads/2019/02/claquete_animado.gif",
+        splash: CachedNetworkImage(
+          imageUrl: "https://pequenocineasta.com.br/wp-content/uploads/2019/02/claquete_animado.gif",
           fit: BoxFit.contain,
         ),
         duration: 6000,
