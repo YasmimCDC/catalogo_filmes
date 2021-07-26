@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "493612992936",
+    "project_id": "netprime-plus",
+    "storage_bucket": "netprime-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493612992936:android:5de71bf7a9ebb9353e759d",
+        "android_client_info": {
+          "package_name": "com.yasmim_batista.catalogo_filmes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493612992936-lcjcshrlstgqshs0j6757vuok0o27k2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yasmim_batista.catalogo_filmes",
+            "certificate_hash": "a9dce931730209a6c0d28773e6fae33f0fd85440"
+          }
+        },
+        {
+          "client_id": "493612992936-hssiija32ff1lheqed14hqodp1j7lk7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlSSzV1TAAZGwp5fK-ARweDgZ66eWEiU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493612992936-hssiija32ff1lheqed14hqodp1j7lk7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

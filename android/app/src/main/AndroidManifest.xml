@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yasmim_batista.catalogo_filmes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    
    <application
         android:label="catalogo_filmes"
         android:icon="@mipmap/ic_launcher">

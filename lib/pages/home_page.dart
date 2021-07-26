@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:catalogo_filmes/pages/detalhe_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -57,49 +58,52 @@ class HomePage extends StatelessWidget {
   }
 
   Widget _buildCard(BuildContext context, List<String> filme) {
-    return Container(
-      decoration: BoxDecoration(
-        boxShadow: [BoxShadow(
-          color: Colors.grey.withOpacity(0.3),
-            spreadRadius: 5,
-            blurRadius: 7,
-            //offset: Offset(0, 3)
-        )],
-        borderRadius: BorderRadius.circular(15),
-        gradient: _getRandomLinearGradient(),
-      ),
-      padding: EdgeInsets.all(10.0),
-      child: Column(
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(
-                top: 20.0,
-                bottom: 5.0,
-            ),
-            child: Text(
-              "id: " + filme[0] + "      " + filme[1],
-              style: GoogleFonts.poppins(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold
-                )
+    return InkWell(
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => DetalhePage())),
+      child: Container(
+          decoration: BoxDecoration(
+            boxShadow: [BoxShadow(
+              color: Colors.grey.withOpacity(0.3),
+              spreadRadius: 5,
+              blurRadius: 7,
+              //offset: Offset(0, 3)
+            )],
+            borderRadius: BorderRadius.circular(15),
+            gradient: _getRandomLinearGradient(),
+          ),
+          padding: EdgeInsets.all(10.0),
+          child: Column(
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 20.0,
+                  bottom: 5.0,
+                ),
+                child: Text(
+                    "id: " + filme[0] + "      " + filme[1],
+                    style: GoogleFonts.poppins(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold
+                    )
+                ),
               ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(
-              top: 5.0,
-              bottom: 20.0,
-            ),
-            child: Text(
-                "Duração: " + filme[2],
-                style: GoogleFonts.robotoMono(
-                  color: Colors.white,
-                  fontSize: 11,
-                )
-            ),
-          ),
-        ],
-      )
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 5.0,
+                  bottom: 20.0,
+                ),
+                child: Text(
+                    "Duração: " + filme[2],
+                    style: GoogleFonts.robotoMono(
+                      color: Colors.white,
+                      fontSize: 11,
+                    )
+                ),
+              ),
+            ],
+          )
+      ),
     );
   }
 
